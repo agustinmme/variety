@@ -5,12 +5,12 @@ int sumTotalBuy(int arr[], int n);
 int sumTotalSale(int price[],int stock[], int n);
 int main(){
 	
-	int valueIteration = 2;
+	int iterationValue = 2;
 	
     printf("Hi,Welcome\n");
     
-    int n1[valueIteration],n2[valueIteration];
-    for(int i=0;i<valueIteration;i+=1){
+    int n1[iterationValue],n2[iterationValue];
+    for(int i=0;i<iterationValue;i+=1){
  	cout<<"Enter price"<<endl;
     cin>>n1[i];
     cout<<"Enter stock"<<endl;
@@ -18,11 +18,11 @@ int main(){
     printf("\n");
 	}
 	
-   for(int i=0;i<valueIteration;i+=1){
+   for(int i=0;i<iterationValue;i+=1){
     cout<<"\nSale Price "<<i<<" : "<<calSalePrice(n1[i],n2[i]);
 	}
-	cout << "\nTotal Buy   : " << sumTotalBuy(n1, valueIteration);
-	cout << "\nTotal Sale  : " << sumTotalSale(n1,n2, valueIteration);
+	cout << "\nTotal Buy   : " << sumTotalBuy(n1, iterationValue);
+	cout << "\nTotal Sale  : " << sumTotalSale(n1,n2, iterationValue);
     return 0;
 }
 int calSalePrice(int price ,int stock){
